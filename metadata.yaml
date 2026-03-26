@@ -1,4 +1,4 @@
-﻿name: astrbot_plugin_github_repo_analyzer
+name: astrbot_plugin_github_repo_analyzer
 display_name: GitHub 仓库搜索
 author: Codex
 description: 在 GitHub 大量仓库中搜索目标项目，并把结果整理成适合机器人输出的文本。

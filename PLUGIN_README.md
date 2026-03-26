@@ -1,4 +1,4 @@
-﻿# astrbot_plugin_github_repo_analyzer
+# astrbot_plugin_github_repo_analyzer
 
 一个 AstrBot 插件，用来在 GitHub 海量仓库中搜索你想要的项目，并把结果整理后返回给机器人。
 

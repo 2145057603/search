@@ -1,4 +1,4 @@
-﻿# search
+# search
 
 AstrBot GitHub 仓库搜索插件。
 
