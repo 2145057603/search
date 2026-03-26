@@ -1,0 +1,48 @@
+﻿{
+  "github_token": {
+    "description": "GitHub Token",
+    "type": "string",
+    "hint": "可选。填写后可以减少 GitHub 搜索 API 的匿名限流影响，建议使用细粒度只读 token。",
+    "default": "",
+    "invisible": true
+  },
+  "request_timeout_seconds": {
+    "description": "请求超时时间（秒）",
+    "type": "int",
+    "hint": "单次 GitHub API 请求的超时时间。",
+    "default": 20
+  },
+  "user_agent": {
+    "description": "GitHub 请求 User-Agent",
+    "type": "string",
+    "hint": "通常保持默认即可，GitHub API 要求提供 User-Agent。",
+    "default": "astrbot-plugin-github-repo-analyzer/0.2.0"
+  },
+  "result_limit": {
+    "description": "返回结果数",
+    "type": "int",
+    "hint": "每次搜索最多输出多少个仓库，建议 3 到 10。",
+    "default": 5
+  },
+  "sort_by": {
+    "description": "排序字段",
+    "type": "string",
+    "hint": "可填写 stars、updated、forks、help-wanted-issues；默认按 stars。",
+    "default": "stars"
+  },
+  "sort_order": {
+    "description": "排序方向",
+    "type": "string",
+    "hint": "可填写 desc 或 asc。",
+    "default": "desc"
+  },
+  "preset_queries": {
+    "description": "预设搜索词",
+    "type": "text",
+    "hint": "填写 JSON 对象，键为预设名，值为搜索词。例如：{\"modloader\":\"slay the spire mod loader\"}",
+    "default": "{\n  \"modloader\": \"slay the spire mod loader\",\n  \"astrbot\": \"astrbot plugin\"\n}",
+    "editor_mode": true,
+    "editor_language": "json",
+    "editor_theme": "vs-light"
+  }
+}
